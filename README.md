@@ -5,4 +5,4 @@ This project was developed using the Visual Studio Code plugin PlatformIO, a pow
 
 Development used Adafruit Feather HUZZAH ESP8266 modules, an Adafruit stepper motor Feather Wing, and a stepper motor of your choice that is strong enough to turn the valve you are using.
 
-![](/images/Leak Detector/1.jpg)
+![](/Images/Leak Detector/1.jpg)
