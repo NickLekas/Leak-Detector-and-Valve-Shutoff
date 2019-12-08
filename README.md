@@ -5,4 +5,27 @@ This project was developed using the Visual Studio Code plugin PlatformIO, a pow
 
 Development used Adafruit Feather HUZZAH ESP8266 modules, an Adafruit stepper motor Feather Wing, and a stepper motor of your choice that is strong enough to turn the valve you are using.
 
-![](/Images/Leak Detector/1.jpg)
+
+## Setup guide
+
+### Valve Hub
+![](/Images/Valve%20Hub/ValveHub.png)
+Step 1: Place your ESP module into a breadboard. In this guide, an Adafruit Feather HUZZAH ESP8266.
+![](/Images/Valve%20Hub/1.jpg)
+Step 2: Attach your stepper motor driver. In this guide an Adafruit DC Motor + Stepper FeatherWing is used and it connects to the top of the Adafruit Feather HUZZAH ESP8266.
+![](/Images/Valve%20Hub/2.jpg)
+Step 3: Connect 12V power to the stepper motor driver, on this Adafruit driver, power is connected to the single 2 wire terminal block.
+![](/Images/Valve%20Hub/3.jpg)
+Step 4: Connect the stepper motor, make sure you know which wires belong to each coil in the motor. If you’re not sure, choose 2 of the 4 wires, hold the exposed ends together and turn the output shaft of the motor. If there is resistance, then you have the wires for 1 coil, if there is no resistance swap 1 wire out for another and test again.
+![](/Images/Valve%20Hub/4.jpg)
+
+### Leak Detector
+![](/Images/Leak%20Detector/LeakDetector.png)
+Step 1: Place your ESP module into a breadboard. In this guide, an Adafruit Feather HUZZAH ESP8266.
+![](/Images/Leak%20Detector/1.jpg)
+Step 2: The ESP8266 operates at 3.3V, but the ADC can only read from 0-1V. Because of this a voltage divider is needed. Take the 10kΩ and connect one end to the 3.3V out of the ESP to an NC (No Connection) pin on the ESP.
+![](/Images/Leak%20Detector/2.jpg)
+Step 3: Connect the 3.3kΩ resistor to the ground pin on the ESP and the NC pin that you connected the 10kΩ resistor to.
+![](/Images/Leak%20Detector/3.jpg)
+Step 4: Connect one of the jumper wires to the NC pin that the 2 resistors are connected to and the other jumper wire to the ADC pin on the ESP. These wires are used to detect water when both are touching the same puddle
+![](/Images/Leak%20Detector/4.jpg)
