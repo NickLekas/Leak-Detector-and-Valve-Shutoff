@@ -7,7 +7,7 @@ We developed the code using the Visual Studio Code plugin PlatformIO, a powerful
 
 Development used Adafruit Feather HUZZAH ESP8266 modules, an Adafruit stepper motor FeatherWing, and a 29Nm stepper motor which was not strong enough to turn the valve you are using. We would not recomend using the FeatherWing motor shield and would suggest using a DRV8825 or stronger driver, Pololu has many options and a great comparison chart
 
-Below is the hardware setup guide, motor mounting documentatoin was not created becasue the motor used was significantly underpowered for direct drive mounting. The system we designed is in the repo for you to adapt to your motor if you find it useful.
+Below is the hardware setup guide. Motor mounting documentation was not created becasue the motor used was significantly underpowered for direct drive mounting. The system we designed is in the repo for you to adapt to your motor if you find it useful.
 
 ## Setup guide
 
