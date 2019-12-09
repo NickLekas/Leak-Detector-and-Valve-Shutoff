@@ -1,10 +1,13 @@
 # Leak Detector and Valve Shutoff
 This is an ESP8266 based leak detection system that will close a valve when a leak is detected
 
-This project was developed using the Visual Studio Code plugin PlatformIO, a powerful step up from the Arduino IDE. Becasue of this, files for both PlatformIO and the Arduio IDE are provided. If you’re using the Arduino IDE follow the instructions in the ino file. If you’re using PlatformIO, follow the instructions in the ‘Readme.txt’ that is in the ‘src’ folder for each device. PlatofrmIO is setup to download all needed libraies and the Arduino IDE will need a library installed manually which is provided in the Ardruino IDE folder.
+This project was developed for the ENGR114 course taught by Peter Kazarinoff at Portland Comunity College in Portland Oregon. Everything in this repo is open for anyone to use at home or develop further.
 
-Development used Adafruit Feather HUZZAH ESP8266 modules, an Adafruit stepper motor Feather Wing, and a stepper motor of your choice that is strong enough to turn the valve you are using.
+We developed the code using the Visual Studio Code plugin PlatformIO, a powerful step up from the Arduino IDE. Becasue of this, files for both PlatformIO and the Arduio IDE are provided. If you’re using the Arduino IDE follow the instructions in the ino file. If you’re using PlatformIO, follow the instructions in the ‘Readme.txt’ that is in the ‘src’ folder for each device. PlatofrmIO is setup to download all needed libraies and the Arduino IDE will need a library installed manually which is provided in the Ardruino IDE folder.
 
+Development used Adafruit Feather HUZZAH ESP8266 modules, an Adafruit stepper motor FeatherWing, and a 29Nm stepper motor which was not strong enough to turn the valve you are using. We would not recomend using the FeatherWing motor shield and would suggest using a DRV8825 or stronger driver, Pololu has many options and a great comparison chart
+
+Below is the hardware setup guide, motor mounting documentatoin was not created becasue the motor used was significantly underpowered for direct drive mounting. The system we designed is in the repo for you to adapt to your motor if you find it useful.
 
 ## Setup guide
 
